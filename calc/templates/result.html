@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="border-bottom">Website: {{Result}}</h1>
+<div class="row">
+<div class="border-bottom col-10">
+    <h6><span class="fa-stack"><i class="fa-solid fa-square fa-stack-2x"></i><i class="fa-solid fa-t fa-stack-1x fa-inverse"></i></span> Title: </h6><h5>{{title}}</h5>
+</div>
+<div class="border-bottom col-2">
+    <h6>Title Length: </h6><h5>{{title_length}}</h5></div>
+</div>
+<div class="row">
+<div class="border-bottom col-10">
+    <h6><span class="fa-stack"><i class="fa-solid fa-square fa-stack-2x"></i><i class="fa-solid fa-d fa-stack-1x fa-inverse"></i></span> Description: </h6><h5>{{description}}</h5></div>
+<div class="border-bottom col-2">
+    <h6>Description Length: </h6><h5>{{description_length}}</h5></div>
+</div>
+<div class="row">
+<div class="border-bottom col-6">
+    <h6><span class="fa-stack"><i class="fa-solid fa-square fa-stack-2x"></i><i class="fa-solid fa-heading fa-stack-1x fa-inverse"></i></span> H1: </h6><h5>{{h1}}</h5></div>
+<div class="border-bottom col-6">
+    <h6><i class="fa-solid fa-heading"></i> H2: </h6><h5>{{h2}}</h5></div>
+</div>
+<div class="row">
+<div class="border-bottom col-6">
+    <h6><span class="fa-stack"><i class="fa-solid fa-square fa-stack-2x"></i><i class="fa-solid fa-heading fa-stack-1x fa-inverse"></i></span> H3: </h6><h5>{{h3}}</h5></div>
+<div class="border-bottom col-6">
+    <h6> <i class="fa-solid fa-heading"></i> H4: </h6><h5>{{h4}}</h5></div>
+</div>
+<div class="row">
+<div class="border-bottom col-6">
+    <h6><span class="fa-stack"><i class="fa-solid fa-square fa-stack-2x"></i><i class="fa-solid fa-heading fa-stack-1x fa-inverse"></i></span> H5: </h6><h5>{{h5}}</h5></div>
+<div class="border-bottom col-6">
+    <h6><i class="fa-solid fa-heading"></i> H6: </h6><h5>{{h6}}</h5></div>
+</div>
+<div class="row">
+<div class="border-bottom col-2">
+    <h6><span class="fa-stack"><i class="fa-solid fa-square fa-stack-2x"></i><i class="fa-solid fa-image fa-stack-1x fa-inverse"></i></span> Number of Empty Alt: </h6><h5>{{image}}</h5></div>
+<div class="border-bottom col-10">
+    <h6><i class="fa-solid fa-images"></i>  Images source tag:  </h6><h5>{{EmptyImage_altribute}}</h5></div>
+</div>
+
+{% endblock %}
